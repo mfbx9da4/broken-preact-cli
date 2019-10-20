@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "instructorlist",
+  "name": "preact-cli-bug",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -8,7 +8,7 @@
     "start:production": "npm run -s serve",
     "start:development": "npm run -s dev",
     "_build": "./node_modules/.bin/preact build --template template.ejs --verbose --clean --no-prerender --src src-temp",
-    "build": "find . -name '.DS_Store' -type f -delete && yarn _build && rm -rf ../instructorlist-express/frontend-build-copy/* && cp -r ./build/* ../instructorlist-express/frontend-build-copy/",
+    "build": "find . -name '.DS_Store' -type f -delete && yarn _build",
     "serve": "yarn _build && ./node_modules/.bin/preact serve",
     "dev": "./node_modules/.bin/preact watch --https --template template.ejs ",
     "lint": "eslint src",
